@@ -22,15 +22,53 @@ header{
 
 #img-div{
 	max-width:100%;
-	height:auto;
 	margin: 0 auto;
+	position: relative;
 }
 
+img{
+  animation-name: slide;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
 
 #image{
-	min-width:100%;
-	max-height:500px;
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+  margin: auto;
+
 }
+
+ #image2{
+	 top:0;
+	  position:absolute;
+	  max-width: 100%;  
+	  height: auto;
+      margin: auto;
+	  
+	  animation-delay: 3s;
+ }
+ 
+#image3{
+	top:0;
+	  position:absolute;
+	  max-width: 100%;  
+	  height: auto;
+      margin: auto;
+	  
+	  animation-delay: 6s;
+  }
+
+
+@keyframes slide{
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+	
+}
+
 
 #title{
 	color:#444;
@@ -43,8 +81,8 @@ header{
 	margin:0 0 0 1%;
 }
 
-#tribute-info{
-	padding:1%;
+main{
+	padding:2%;
 }
 
 #headline{
@@ -55,13 +93,19 @@ header{
 	display: grid;
 	grid-template-columns: repeat( auto-fill, minmax(400px, 1fr));
 	grid-gap:10px;
+  
 }
 
 #tribute-info li{
 	border: 1px solid #aaa;
 	padding:10px;
 	list-style-type: none;
+	
 }
 
+footer{
+	background-color:#eee;
+	text-align:center;
+}
 
 
