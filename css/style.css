@@ -90,22 +90,32 @@ main{
 }
 
 #tribute-info ul{
-	display: grid;
-	grid-template-columns: repeat( auto-fill, minmax(400px, 1fr));
-	grid-gap:10px;
-  
+	display:flex;
+	flex-wrap:wrap;
+  	max-width: 900px;
+  	margin: 0 auto;
 }
 
 #tribute-info li{
 	border: 1px solid #aaa;
 	padding:10px;
 	list-style-type: none;
-	
+	width: 250px;
+	margin:10px;
+	border-radius:4px;
+	background-color: #ecf0f1;
+	box-shadow: 2px 2px 5px #666;
 }
 
 footer{
 	background-color:#eee;
 	text-align:center;
+	padding: 10px;
+}
+
+#me{
+	text-align: right;
+	font-size:10px;
 }
 
 
